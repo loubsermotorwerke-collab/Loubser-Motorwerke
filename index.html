@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loubser Motorwerke</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">Loubser Motorwerke</div>
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#cart">Cart</a>
+      <a href="#track">Track Order</a>
+    </nav>
+  </header>
+
+  <!-- HERO / HOME -->
+  <section class="hero">
+    <h1>Quality Polyurethane Bushes & 3D Printed Car Parts</h1>
+    <p>Upgrade your car with precision and durability.</p>
+    <a href="#products" class="btn">Shop Products</a>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="product-grid" id="productGrid">
+      <!-- Products added via JS -->
+    </div>
+  </section>
+
+  <!-- CART -->
+  <section id="cart">
+    <h2>Your Cart</h2>
+    <div id="cartItems"></div>
+    <p id="cartTotal"></p>
+    <button onclick="checkout()">Checkout</button>
+  </section>
+
+  <!-- ORDER TRACKING -->
+  <section id="track">
+    <h2>Track Your Order</h2>
+    <form id="trackForm" onsubmit="trackOrder(event)">
+      <input type="text" id="orderId" placeholder="Enter your Order ID" required>
+      <button type="submit">Track</button>
+    </form>
+    <p id="trackResult"></p>
+  </section>
+
+  <!-- LEGAL DISCLAIMER -->
+  <footer>
+    <p>All prices are in ZAR by default. Shipping is not included. Please read our <a href="#legal">legal disclaimer</a>.</p>
+    <p id="legal">Loubser Motorwerke is not responsible for vehicle damage or misuse of parts. All products sold as-is.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
