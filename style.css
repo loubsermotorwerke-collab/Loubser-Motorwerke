@@ -169,6 +169,12 @@ footer {
   text-align: center;
   border-top: 1px solid #ddd;
   font-size: 0.9rem;
+  header .logo img {
+  height: 60px; /* makes the emblem smaller or bigger */
+  width: auto;  /* keeps the shape correct */
+  display: block;
+}
+
 }
 
 footer a {
